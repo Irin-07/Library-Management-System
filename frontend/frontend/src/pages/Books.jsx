@@ -3,8 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import "./Books.css";
 
-
-const API_URL = `${API_URL}/api/books`;
+const BASE_URL = import.meta.env.VITE_API_URL;
+const API_URL = `${BASE_URL}/api/books`;
 
 
 const emptyForm = {
