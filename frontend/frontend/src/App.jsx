@@ -30,15 +30,14 @@ function App() {
     const fetchDashboardData = async () => {
       try {
         const [bookRes, memberRes, issueRes] = await Promise.all([
-<<<<<<< HEAD
+
           axios.get("http://localhost:5000/api/books"),
           axios.get("http://localhost:5000/api/members"),
           axios.get("http://localhost:5000/api/issues"),
-=======
           axios.get("https://library-management-system-32cb.onrender.com/api/books"),
           axios.get("https://library-management-system-32cb.onrender.com/api/members"),
           axios.get("https://library-management-system-32cb.onrender.com/api/issues"),
->>>>>>> 2f3d365 (Initial commit - Library Management System)
+
         ]);
 
         const books = Array.isArray(bookRes.data)
