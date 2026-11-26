@@ -3,11 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Members.css";
 
-<<<<<<< HEAD
+
 const API = "http://localhost:5000/api/members";
-=======
-const API = "http://https://library-management-system-32cb.onrender.com/api/members";
->>>>>>> 2f3d365 (Initial commit - Library Management System)
 
 function Members() {
   const [members, setMembers] = useState([]);

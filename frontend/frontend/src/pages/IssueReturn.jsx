@@ -3,15 +3,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./IssueReturn.css";
 
-<<<<<<< HEAD
+
 const BOOK_API = "http://localhost:5000/api/books";
 const MEMBER_API = "http://localhost:5000/api/members";
 const ISSUE_API = "http://localhost:5000/api/issues";
-=======
-const BOOK_API ="htt//library-management-system-32cb.onrender.:5000com/api/books";
-const MEMBER_API = "httibrary-management-system-32cb.onrender.com:5000/api/members";
-const ISSUE_API ="htibrary-management-system-32cb.onrender.comt:5000/api/issues";
->>>>>>> 2f3d365 (Initial commit - Library Management System)
+
 
 function IssueReturn() {
   const [books, setBooks] = useState([]);

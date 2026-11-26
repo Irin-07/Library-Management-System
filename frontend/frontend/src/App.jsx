@@ -30,14 +30,9 @@ function App() {
     const fetchDashboardData = async () => {
       try {
         const [bookRes, memberRes, issueRes] = await Promise.all([
-
           axios.get("http://localhost:5000/api/books"),
           axios.get("http://localhost:5000/api/members"),
           axios.get("http://localhost:5000/api/issues"),
-          axios.get("https://library-management-system-32cb.onrender.com/api/books"),
-          axios.get("https://library-management-system-32cb.onrender.com/api/members"),
-          axios.get("https://library-management-system-32cb.onrender.com/api/issues"),
-
         ]);
 
         const books = Array.isArray(bookRes.data)

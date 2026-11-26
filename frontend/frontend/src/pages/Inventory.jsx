@@ -3,11 +3,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Inventory.css";
 
-<<<<<<< HEAD
+
 const API = "http://localhost:5000/api/inventory";
-=======
-const API = "https://library-management-system-32cb.onrender.com/api/inventory";
->>>>>>> 2f3d365 (Initial commit - Library Management System)
+
 
 function Inventory() {
   const [history, setHistory] = useState([]);
