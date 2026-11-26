@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./IssueReturn.css";
+const API_URL = import.meta.env.VITE_API_URL;
 
-
-const BOOK_API = "http://localhost:5000/api/books";
-const MEMBER_API = "http://localhost:5000/api/members";
-const ISSUE_API = "http://localhost:5000/api/issues";
+const BOOK_API = `${API_URL}/api/books`;
+const MEMBER_API = `${API_URL}/api/members`;
+const ISSUE_API = `${API_URL}/api/issues`;
 
 
 function IssueReturn() {

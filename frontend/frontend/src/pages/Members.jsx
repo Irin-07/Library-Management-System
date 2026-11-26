@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Members.css";
+const API_URL = import.meta.env.VITE_API_URL;
 
-
-const API = "http://localhost:5000/api/members";
+const API = `${API_URL}/api/members`;
 
 function Members() {
   const [members, setMembers] = useState([]);

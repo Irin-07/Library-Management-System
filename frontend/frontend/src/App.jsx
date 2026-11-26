@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+const API_URL = import.meta.env.VITE_API_URL;
 import Books from "./pages/Books";
 import Members from "./pages/Members";
 import IssueReturn from "./pages/IssueReturn";
@@ -30,9 +30,9 @@ function App() {
     const fetchDashboardData = async () => {
       try {
         const [bookRes, memberRes, issueRes] = await Promise.all([
-          axios.get("http://localhost:5000/api/books"),
-          axios.get("http://localhost:5000/api/members"),
-          axios.get("http://localhost:5000/api/issues"),
+          axios.get(`${API_URL}/api/books`),
+          axios.get(`${API_URL}/api/members`),
+          axios.get(`${API_URL}/api/issues`),
         ]);
 
         const books = Array.isArray(bookRes.data)

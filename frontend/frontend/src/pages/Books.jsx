@@ -4,7 +4,7 @@ import axios from "axios";
 import "./Books.css";
 
 
-const API_URL = "http://localhost:5000/api/books";
+const API_URL = `${API_URL}/api/books`;
 
 
 const emptyForm = {
