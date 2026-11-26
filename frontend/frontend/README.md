@@ -79,7 +79,11 @@ Start the backend:
 npm run dev
 ```
 
+<<<<<<< HEAD
 Backend URL: `http://localhost:5000`
+=======
+Backend URL: `http://https://library-management-system-32cb.onrender.com`
+>>>>>>> 2f3d365 (Initial commit - Library Management System)
 
 ### 3. Frontend Setup
 

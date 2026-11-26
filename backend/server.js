@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require("dotenv").config();
+=======
+require("dotenv").config({ path: require("path").join(__dirname, ".env") });
+>>>>>>> 2f3d365 (Initial commit - Library Management System)
 
 const express = require("express");
 const cors = require("cors");
