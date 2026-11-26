@@ -8,7 +8,7 @@ const Issue = require("../models/Issue");
 // ADD MEMBER
 router.post("/", async (req, res) => {
   try {
-    const { name, email, phone, address } = req.body;
+    const { name, email, phone, address, status } = req.body;
 
     if (!name || !email || !phone || !address) {
       return res.status(400).json({
@@ -30,7 +30,8 @@ router.post("/", async (req, res) => {
       name,
       email,
       phone,
-      address
+      address,
+      status
     });
 
     res.status(201).json({
