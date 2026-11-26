@@ -1,13 +1,10 @@
+
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-<<<<<<< HEAD
-    await mongoose.connect(process.env.MONGO_URI);
-
-=======
     await mongoose.connect(process.env.MONGODB_URI);
->>>>>>> 2f3d365 (Initial commit - Library Management System)
+
     console.log("MongoDB Connected Successfully");
   } catch (error) {
     console.log("MongoDB Connection Error:", error.message);
